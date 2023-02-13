@@ -147,6 +147,7 @@ a {
     display: flex;
     flex-direction: column;
 }
+html, body {margin: 0; height: 100%; overflow: hidden}
 
 #socialLinks a {
     text-decoration: none;
