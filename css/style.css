@@ -20,7 +20,7 @@ h3 {
 h2 {
     font-family: 'Patrick Hand', cursive;
 }
-  
+
 button {
     font-family: 'Patrick Hand', cursive;
 }
@@ -33,10 +33,10 @@ a {
     font-family: 'Patrick Hand', cursive;
 }
 
-#container {
-    height: 100vh;
+body {
+    height: 100%;
     width: 100%;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     background: linear-gradient(#7C2AE8, #FFBD59);
@@ -44,8 +44,8 @@ a {
 
 /* logo css */
 #logo {
-    position: absolute;
-    top: 50px;
+    position: relative;
+    top: 90px;
     left: 5%;
     font-size: 34px;
     color: #ff9acb;
@@ -56,9 +56,8 @@ a {
 #navbar {
     height: 60px;
     width: 925px;
-    position: absolute;
-    top: 50px;
-    right: 5%;
+    position: relative;
+    right: -50%;
     border-radius: 20px;
     z-index: 999;
     overflow: hidden;
@@ -71,6 +70,11 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: row;
+}
+
+#SoundCloud{
+    position: relative;
+    top: 20px;
 }
 
 #navbar ul li a {
@@ -88,18 +92,8 @@ a {
 
 #navbar ul li a:hover {
     color: #ff9acb;
-    border-bottom: 2px solid #ff9acb;
+    border-bottom: 3px solid #ff9acb;
     width: calc(100% - 150px);
-}
-
-/* circle css*/
-
-
-/* side image css */
-#sideImage {
-    position: absolute;
-    left: 0;
-    bottom: 0;
 }
 
 /* content css */
@@ -107,7 +101,7 @@ a {
     height: auto;
     width: 700px;
     position: absolute;
-    right: 11%;
+    right: 50%;
     top: calc(50% - 215px);
 }
 
@@ -147,7 +141,13 @@ a {
     display: flex;
     flex-direction: column;
 }
-html, body {margin: 0; height: 100%; overflow: hidden}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
 
 #socialLinks a {
     text-decoration: none;
@@ -178,7 +178,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     height: 90px;
     width: 90px;
     position: absolute;
-    bottom: 0px;
+    bottom: 5px;
     right: 20%;
     border-radius: 50%;
     display: grid;
@@ -191,7 +191,9 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 /* animatin for music icon */
 @keyframes animate {
-    0%,100% {
+
+    0%,
+    100% {
         background: #ff9acb;
         color: #fff;
         right: 20%;
