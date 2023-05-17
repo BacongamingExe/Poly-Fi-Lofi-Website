@@ -280,6 +280,97 @@ body {
     }
 }
 
+@media only screen and (max-width: 400px) and (min-width: 200px) {
+    #navbar {
+        height: 50px;
+        width: 925px;
+        scale: 0.75;
+        position: absolute;
+        right: -50%;
+        bottom: 88%;
+        z-index: 999;
+        overflow: hidden;
+    }
+
+    #logo {
+        font-size: 0;
+    }
+
+    #content {
+        height: auto;
+        width: 700px;
+        scale: 0.5;
+        position: absolute;
+        right: -18%;
+        bottom: 30%;
+        top: calc(50% - 215px);
+    }
+
+    #content p {
+        font-size: xx-large;
+    }
+
+    #music {
+        scale: .75;
+        bottom: -1.25%;
+    }
+
+    #socialLinks {
+        position: absolute;
+        bottom: 25%;
+        right: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden
+    }
+    
+    #socialLinks a {
+        text-decoration: none;
+        margin: 5px 0;
+        scale: 0.75;
+    }
+    
+    #socialLinks a i {
+        height: 50px;
+        width: 50px;
+        margin: 0 10px;
+        font-size: 20px;
+        color: #dce8f7;
+        background: #ff9acb;
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+    }
+    
+    #navbar ul {
+        height: 100%;
+        width: 965px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #navbar ul li a {
+        height: 100%;
+        width: auto;
+        margin: 0 30px;
+        font-size: 25px;
+        margin-left: 0;
+        display: grid;
+        place-items: center;
+        padding: 0 0px;
+        text-decoration: none;
+        color: #000;
+    }
+}
+
 /* animatin for music icon */
 @keyframes animate {
 
